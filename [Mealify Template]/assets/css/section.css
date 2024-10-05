@@ -1,0 +1,83 @@
+.section {
+    padding: 90px 0 110px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title h2 {
+    color: var(--cl-grey);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 0;
+}
+
+.section-title p {
+    color: var(--cl-black);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    margin: 0 0 70px;
+}
+
+.section-title p span {
+    color: var(--cl-red);
+}
+
+.section-bg-primary {
+    scroll-margin-top: 80px;
+    background-color: var(--bg-primary);
+}
+
+.section-bg-secondary {
+    scroll-margin-top: 80px;
+    background-color: var(--bg-secondary);
+}
+
+
+.section-content {
+    display: flex;
+}
+
+.section-content-warp {
+    flex-wrap: wrap;
+}
+
+.section-content-gap40 {
+    gap: 40px;
+}
+
+.section-content-rgap20 {
+    row-gap: 20px;
+}
+
+.section-content-spacebetween{
+    justify-content: space-between;
+}
+
+
+/*
+
+Page Responsive
+
+*/
+/* small tablet (columns) */
+@media (min-width: 640px) {}
+
+/* big tablet */
+@media (min-width: 768px) {}
+
+/* below 720p (Starting Desktop) (rows from this point)  */
+@media (min-width: 1024px) {
+    /* .section {
+        height: 100vh;
+    } */
+}
+
+/* 720p */
+@media (min-width: 1280px) {}
+
+/* 1080p */
+@media (min-width: 1536px) {}

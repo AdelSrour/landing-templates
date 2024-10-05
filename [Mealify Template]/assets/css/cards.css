@@ -1,0 +1,136 @@
+/*
+
+card Card
+
+*/
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: var(--cl-black);
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 15px 0;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(106%);
+}
+
+.card:hover .card-icons {
+    top: 30px;
+    right: 15px;
+}
+
+.card-icons {
+    position: absolute;
+    top: 30px;
+    right: -60px;
+    z-index: 5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(33, 37, 41);
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s 0.5s ease;
+}
+
+.card-icons a {
+    color: rgba(55, 55, 63, 0.4);
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 0;
+    display: block;
+    transition: color 0.4s ease;
+}
+
+.card-icons a:hover {
+    color: #37373fe6;
+}
+
+
+/*
+
+card Image
+
+*/
+.card-display {
+    position: relative;
+    z-index: 1;
+}
+
+.card-display .card-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%;
+}
+
+.card-display::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+    content: var(--card-overflay);
+    width: 100%;
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+
+/*
+
+card description
+
+*/
+.card-desc {
+    padding: 10px 20px;
+}
+
+.card-desc h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 18.72;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.card-desc span {
+    color: var(--cl-grey);
+    font-size: 14px;
+}
+
+.card-desc p {
+    color: var(--cl-grey);
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/*
+
+Page Responsive
+
+*/
+/* small tablet (columns) */
+@media (min-width: 640px) {}
+
+/* big tablet */
+@media (min-width: 768px) {
+    .card {
+        width: 47%;
+    }
+}
+
+/* below 720p (Starting Desktop) (rows from this point)  */
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+}
+
+/* 720p */
+@media (min-width: 1280px) {}
+
+/* 1080p */
+@media (min-width: 1536px) {}

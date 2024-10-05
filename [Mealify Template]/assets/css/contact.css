@@ -1,0 +1,136 @@
+.contact-icons {
+    padding: 25px;
+    color: var(--cl-secondary);
+    background-color: var(--bg-offwhite);
+    width: 100%;
+}
+
+.icon-cir {
+    display: inline-block;
+    color: var(--cl-white);
+    background-color: var(--cl-red);
+    padding: 18px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.icon-cir i {
+    font-size: 20px;
+}
+
+.icon-desc {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.icon-desc h3 {
+    color: var(--cl-grey);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.icon-desc p {
+    margin: 5px 0 0;
+}
+
+
+.contact-form {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: var(--contact-form);
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 15px 0;
+}
+
+
+.contact-form label {
+    display: none;
+}
+
+.contact-form form input {
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42;
+    padding: 25px 20px;
+    color: #212529;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: all 0.4s ease;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    outline: none;
+    border: 2px solid var(--cl-red);
+}
+
+.contact-form form textarea {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding: 25px 20px;
+    color: #212529;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    resize: vertical;
+    transition: all 0.4s ease;
+}
+
+.contact-form form #usrName {
+    float: left;
+    width: 49.5%;
+}
+
+.contact-form form #usrEmail {
+    float: right;
+    width: 49.5%;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.custombtn {
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--cl-white);
+    background-color: var(--cl-red);
+    border: none;
+    margin-top: 15px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+}
+
+.custombtn:hover {
+    background-color: var(--bg-double-red);
+}
+
+/*
+
+Page Responsive
+
+*/
+/* small tablet (columns) */
+@media (min-width: 640px) {}
+
+/* big tablet */
+@media (min-width: 768px) {
+    .contact-icons {
+        width: 49%;
+    }
+}
+
+/* below 720p (Starting Desktop) (rows from this point)  */
+@media (min-width: 1024px) {}
+
+/* 720p */
+@media (min-width: 1280px) {}
+
+/* 1080p */
+@media (min-width: 1536px) {}

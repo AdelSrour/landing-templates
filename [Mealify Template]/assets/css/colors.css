@@ -1,0 +1,85 @@
+/*
+
+Text colors 
+
+*/
+
+:root {
+    --bg-primary: rgb(255, 255, 255);
+    --bg-dark-primary: #202020;
+
+    --bg-secondary: rgb(238, 238, 238);
+    --bg-dark-secondary: #252525;
+
+    --bg-red: rgb(206, 18, 18);
+    --bg-dark-red: #C17E1F;
+
+    --bg-black: #000;
+    --bg-dark-black: #fff;
+
+    --bg-offwhite: rgb(238, 238, 238);
+    --bg-dark-offwhite: #000;
+
+    --bg-white: #fff;
+    --bg-dark-white: rgb(23, 23, 23);
+
+    --cl-primary: rgb(33, 37, 41);
+    --cl-dark-primary: #fff;
+
+    --cl-secondary: rgb(33, 37, 41);
+    --cl-dark-secondary: #fff;
+
+    --cl-black: #000;
+    --cl-dark-black: #fff;
+
+    --cl-white: #fff;
+    --cl-dark-white: #000;
+
+    --cl-red: rgb(206, 18, 18);
+    --cl-dark-red: #C17E1F;
+
+    --bg-double-red: rgb(230, 20, 20);
+    --bg-dark-double-red: rgb(211, 137, 34);
+
+    --cl-heading: rgb(55, 55, 63);
+    --cl-dark-heading: #fff;
+
+    --cl-heading-p: rgb(79, 79, 90);
+    --cl-dark-heading-p: rgb(159, 159, 159);
+
+    --cl-grey: rgb(127, 127, 144);
+    --cl-dark-grey: rgb(159, 159, 159);
+
+    --card-overflay: url(../images/team-shape.svg);
+    --card-dark-overflay: url(../images/team-shape-dark.svg);
+
+    --contact-form: #fff;
+    --contact-dark-form: #171717;
+
+}
+
+
+/*
+
+Dark mode
+
+*/
+body:has(#darkmode:checked) {
+    --bg-primary: var(--bg-dark-primary);
+    --bg-secondary: var(--bg-dark-secondary);
+    --bg-white: var(--bg-dark-white);
+    --bg-black: var(--bg-dark-black);
+    --cl-primary: var(--cl-dark-primary);
+    --cl-secondary: var(--cl-dark-secondary);
+    --cl-black: var(--cl-dark-black);
+    --cl-white: var(--cl-dark-white);
+    --cl-red: var(--cl-dark-red);
+    --bg-red: var(--bg-dark-red);
+    --cl-heading: var(--cl-dark-heading);
+    --cl-heading-p: var(--cl-dark-heading-p);
+    --bg-double-red: var(--bg-dark-double-red);
+    --cl-grey: var(--cl-dark-grey);
+    --card-overflay: var(--card-dark-overflay);
+    --bg-offwhite: var(--bg-dark-offwhite);
+    --contact-form: var(--contact-dark-form);
+}

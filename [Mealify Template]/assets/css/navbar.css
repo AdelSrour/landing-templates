@@ -1,0 +1,154 @@
+/*
+
+Navbar
+
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    color: var(--cl-primary);
+    background-color: var(--bg-white);
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 15px 0;
+}
+
+/*
+
+Navbar flex container
+
+*/
+.navbar-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+
+Logo
+
+*/
+.navbar-logo a {
+    font-size: 30px;
+}
+
+.navbar-logo a::after {
+    content: ".";
+    color: var(--cl-red);
+}
+
+
+/*
+
+Menu
+
+*/
+.navbar-menu ul {
+    display: none;
+}
+
+.navbar-menu ul li {
+    position: relative;
+    margin: 0 12px;
+}
+
+.navbar-menu ul li a {
+    color: var(--cl-grey);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.navbar-menu ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--cl-red);
+    transition: all 0.4s ease;
+}
+
+.navbar-menu ul li:hover a::after {
+    width: 100%;
+}
+
+.navbar-menu ul li:hover a {
+    color: var(--cl-black);
+}
+
+body:not(:has(:target)) .navbar-menu ul li a[href="#home"]::after,
+body:has(#home:target) .navbar-menu ul li a[href="#home"]::after,
+body:has(#chefs:target) .navbar-menu ul li a[href="#chefs"]::after,
+body:has(#gallery:target) .navbar-menu ul li a[href="#gallery"]::after,
+body:has(#contact:target) .navbar-menu ul li a[href="#contact"]::after {
+    width: 100%;
+}
+
+body:not(:has(:target)) .navbar-menu ul li a[href="#home"],
+body:has(#home:target) .navbar-menu ul li a[href="#home"],
+body:has(#chefs:target) .navbar-menu ul li a[href="#chefs"],
+body:has(#gallery:target) .navbar-menu ul li a[href="#gallery"],
+body:has(#contact:target) .navbar-menu ul li a[href="#contact"] {
+    color: var(--cl-black);
+}
+
+
+/*
+
+Darkmode Icon
+
+*/
+body:not(:has(#darkmode:checked)) label i[site-mode="dark"] {
+    display: unset;
+}
+
+body:has(#darkmode:checked) label i[site-mode="light"] {
+    display: unset;
+}
+
+.navbar-icons label i {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar-icons .navbar-menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/*
+
+Navbar Responsive
+
+*/
+/* small tablet (columns) */
+@media (min-width: 640px) {}
+
+/* big tablet */
+@media (min-width: 768px) {
+    .navbar-menu ul {
+        display: unset;
+    }
+
+    .navbar-icons .navbar-menu-icon {
+        display: none;
+    }
+}
+
+/* below 720p (Starting Desktop) (rows from this point)  */
+@media (min-width: 1024px) {}
+
+/* 720p */
+@media (min-width: 1280px) {}
+
+/* 1080p */
+@media (min-width: 1536px) {}
