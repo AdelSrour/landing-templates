@@ -1,11 +1,10 @@
-<!-- 
+<!--
   Copyright © 2024 Adel.dev
   All Rights Reserved.
   
   GitHub: https://github.com/AdelSrour
-  Website: https://adel.dev 
+  Website: https://adel.dev
 -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +39,7 @@
 <body>
 
     <!-- Fixed navbar div -->
-    <div class="navbar">
+    <div id="navbar" class="navbar">
 
         <!-- Margin for navbar -->
         <div class="container">
@@ -58,6 +57,9 @@
 
                 <!-- navbar menu -->
                 <div class="navbar-menu">
+                    <a class="navbar-menu-close" href="#home">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#chefs">Chefs</a></li>
@@ -76,7 +78,9 @@
                     <input type="checkbox" id="darkmode" hidden>
 
                     <div class="navbar-menu-icon">
-                        <i class="fa-solid fa-bars"></i>
+                        <a href="#navbar">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
                 </div>
                 <!-- navbar dark mode icon -->
@@ -143,7 +147,7 @@
                 <!-- seciton title -->
 
                 <!-- section flex -->
-                <div class="section-content section-content-warp section-content-gap40">
+                <div class="section-content section-content-warp section-content-center section-content-gap40">
 
                     <!-- card -->
                     <div class="card">
@@ -541,7 +545,8 @@
                     <div>
                         <form>
                             <label for="sendEmail"></label>
-                            <input type="text" id="sendEmail" name="sendEmail" placeholder="Enter Your Email Address" required />
+                            <input type="text" id="sendEmail" name="sendEmail" placeholder="Enter Your Email Address"
+                                required />
                             <button type="submit" class="footerbtn">Send Message</button>
                         </form>
                     </div>

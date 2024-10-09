@@ -55,8 +55,33 @@ Logo
 Menu
 
 */
-.navbar-menu ul {
+.navbar-menu {
     display: none;
+}
+
+body:has(#navbar:target) .navbar-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    width: 350px;
+    height: 100%;
+    background-color: var(--bg-white);
+}
+
+body:has(#navbar:target) .navbar-menu li {
+    display: block;
+    margin: 50px;
+    text-align: center;
+}
+
+body:has(#navbar:target) .navbar-menu-close {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .navbar-menu ul li {
@@ -120,10 +145,13 @@ body:has(#darkmode:checked) label i[site-mode="light"] {
     display: unset;
 }
 
-.navbar-icons label i {
-    display: none;
+.navbar-icons label {
     font-size: 25px;
     cursor: pointer;
+}
+
+.navbar-icons label i[site-mode] {
+    display: none;
 }
 
 .navbar-icons .navbar-menu-icon {
@@ -142,7 +170,18 @@ Navbar Responsive
 @media (min-width: 640px) {}
 
 /* big tablet */
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
+
+/* below 720p (Starting Desktop) (rows from this point)  */
+@media (min-width: 1024px) {
+    .navbar-menu {
+        display: block;
+    }
+
+    .navbar-menu-close {
+        display: none;
+    }
+
     .navbar-menu ul {
         display: unset;
     }
@@ -151,9 +190,6 @@ Navbar Responsive
         display: none;
     }
 }
-
-/* below 720p (Starting Desktop) (rows from this point)  */
-@media (min-width: 1024px) {}
 
 /* 720p */
 @media (min-width: 1280px) {}
